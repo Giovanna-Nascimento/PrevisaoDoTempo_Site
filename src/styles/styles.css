@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+
+* {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(#12b3eb, #5460f9);
+}
+
+#container {
+    background-color: #f0f8ff;
+    border-radius: 20px;
+    padding: 18px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #bdbdbd;
+    border-radius: 10px;
+    padding: 4px 12px;
+}
+
+#search input {
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    width: 100%;
+}
+
+#search input:focus-visible {
+    outline: none;
+}
+
+#search button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#weather {
+    display: none;
+    margin-top: 20px;
+}
+
+#weather.show {
+    display: block;
+}
+
+#weather #title {
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #372f3f;
+}
+
+#temp {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    background: linear-gradient(90deg, #5a7cdc, #606dde);
+    color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#temp_img {
+    filter: drop-shadow(2px, 2px, 2px rgba(0, 0, 0, 0.2)); /* box shaddow ficaria uma caixa em volta da imagem */
+}
+
+#temp_value {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 55px;
+}
+
+#temp_desc {
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+#other_infos {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+
+}
+
+#other_infos .info {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 5px 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    gap: 10px;
+}
+
+#other_infos .info h2 {
+    font-size: 15px;
+}
+
+#other_infos .info i {
+    font-size: 20px;
+    width: 20%; /* para alinhar os ícones */
+}
+
+#temp_max_icon {
+    color: #7f1d1d;
+    cursor: pointer;
+}
+
+#temp_min_icon {
+    color: #0284c7;
+    cursor: pointer;
+}
+
+#humidity_icon {
+    color: #0ea5e9;
+    cursor: pointer;
+}
+
+#wind_icon {
+    color: #7c3aed;
+    cursor: pointer;
+}
+
+#alert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+}
+
+#alert img {
+    width: 200px;
+}
